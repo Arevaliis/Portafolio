@@ -1,11 +1,81 @@
-img{
-    width: 20px; /*Buen tamaño iconos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.links-redes{
-    border: 2px solid red;
+:root{
+    --color-principal: rgb(21, 21, 21); 
+    --color-letras: rgb(232, 232, 232);
+    --espaciado: 20px;
 }
+
+/* ========== Body ========== */
+body{
+    color: var(--color-letras);
+    background-color: var(--color-principal);
+    font-family: Arial, Helvetica, sans-serif /*Cambiarla*/
+}
+
+/* ========== Header ========== */
+header{
+    height: 50px;
+    width: auto;
+}
+
+/* ========== Header Nav ========== */
+.barra-inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: var(--espaciado);
+}
+
+nav img{
+    width: 25px;
+    display: none;
+    align-items: center;
+}
+
+.contenido-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--espaciado);
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--color-letras);
+}
+
+@media (max-width:600px) { /*TODO Modificarlo por la pantalla del movil*/
+    nav img{
+        display: flex;
+    }
+
+    .contenido-nav{
+        display: none;
+    }
+}
+
+/*TODO Menu Hamburguesa*/
+
+/* ========== Header ========== */
+
+.contenido-inicio{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+img{
+    width: 20px;
+}
+
 
 .manchuron-azul{
-    width: 100px;
+    width: 200px;
 }
