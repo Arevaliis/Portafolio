@@ -10,6 +10,9 @@
     --espaciado: 20px;
 }
 
+/* ========== FONT ========== */
+
+
 /* ========== Body ========== */
 body{
     color: var(--color-letras);
@@ -67,9 +70,102 @@ header a{
 
 .contenido-inicio{
     height: 400px;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid red;
+    
+}
+
+.imagen-principal{
+    border: 2px solid green;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.imagen-principal img{
+    width: 300px;
+}
+
+.links-redes{
+    border: 2px solid yellow;
+    padding: var(--espaciado);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========== Main ========== */
+main {
+    margin: 650px 0;
+    padding: var(--espaciado);
+    border: 2px solid red;
+}
+
+/* ========== Seccion Sobre Mi ========== */
+
+.titulo-sobre-mi h2{
+    text-decoration: overline; /*TODO Colocar bordes inferiores y superiores*/
+}
+.titulo-sobre-mi h2{
+    text-decoration: underline;
+}
+
+.contenido-sobre-mi{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.info-sobre-mi{
+    text-align: justify;
+
+}
+
+.info-sobre-mi p{
+    padding-top: var(--espaciado);
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.skills span{
+    background-color: #565555;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*TODO Media Query y Cambiar grid de columnas a filas*/
+
+/* ========== Seccion Proyectos ========== */
+
+.proyectos{
+    margin-top: 300px;
+}
+
+
+/* ========== Seccion Formulario ========== */
+
+/* ========== Footer ========== */
+
+
+
+
+
+
+
+
+
+
+
+
 
 img{
     width: 20px;
