@@ -5,19 +5,24 @@
 }
 
 :root{
-    --color-principal: rgb(21, 21, 21); 
+    --color-principal: rgb(20, 20, 20); 
     --color-letras: rgb(232, 232, 232);
     --espaciado: 20px;
 }
 
 /* ========== FONT ========== */
-
+@font-face {
+    font-family: 'FuentePrincipal';
+    src: url('../assets/fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* ========== Body ========== */
 body{
     color: var(--color-letras);
     background-color: var(--color-principal);
-    font-family: Arial, Helvetica, sans-serif /*Cambiarla*/
+    font-family: "FuentePrincipal";
 }
 
 /* ========== Header ========== */
@@ -28,7 +33,7 @@ header{
 
 /* ========== Header Nav ========== */
 .barra-inicio{
-    display: flex;
+    display: flex-end;
     justify-content: space-between;
     align-items: center;
     height: 100%;
@@ -54,16 +59,6 @@ header a{
     color: var(--color-letras);
 }
 
-@media (max-width:600px) { /*TODO Modificarlo por la pantalla del movil*/
-    nav img{
-        display: flex;
-    }
-
-    .contenido-nav{
-        display: none;
-    }
-}
-
 /*TODO Menu Hamburguesa*/
 
 /* ========== Header ========== */
@@ -71,34 +66,128 @@ header a{
 .contenido-inicio{
     height: 400px;
     width: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     border: 2px solid red;
-    
 }
 
-.imagen-principal{
-    border: 2px solid green;
+.contenido-inicio > img{
     display: flex;
     justify-content:flex-end;
     align-items: center;
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    animation: aparecer 2s ease;
 }
 
-.imagen-principal img{
-    width: 300px;
+@keyframes aparecer {
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.titulo {
+        text-align: center;
+    }
+
+.titulo span:first-of-type {
+    color: rgb(247, 65, 65);
+}
+
+.titulo span:last-of-type {
+    color: rgb(67, 187, 252);
 }
 
 .links-redes{
-    border: 2px solid yellow;
     padding: var(--espaciado);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+@media (max-width:480px) { 
+    .contenido-nav{
+        display: none;
+    }
+
+    nav img{
+        display: inline;
+    }
+    
+    .contenido-inicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;     /*Medida Temporal. Un poco cutre*/
+    }
+
+    .contenido-inicio > img{
+    width: auto;
+    height: 200px;
+    object-fit: cover;   /*TODO QUE NO SE CORTE LA IMG*/
+}
+
+    .links-redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--espaciado);
+    }
+
+    .logos-redes{
+        border: 2px solid red; /*TODO SOBREPONER IMG LINKS ENCIMA DEIMG MANCHURON*/
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ========== Main ========== */
 main {
-    margin: 650px 0;
+    margin: 550px 0;
     padding: var(--espaciado);
     border: 2px solid red;
 }
@@ -147,7 +236,7 @@ main {
 /* ========== Seccion Proyectos ========== */
 
 .proyectos{
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 
