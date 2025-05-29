@@ -59,16 +59,14 @@ header a{
     color: var(--color-letras);
 }
 
-/*TODO Menu Hamburguesa*/
-
 /* ========== Header ========== */
+/*TODO VOLVER A MAQUETAR*/
 
 .contenido-inicio{
-    height: 400px;
+    height: 500px;
     width: auto;
     display: flex;
     justify-content: center;
-    border: 2px solid red;
 }
 
 .contenido-inicio > img{
@@ -110,6 +108,9 @@ header a{
     flex-wrap: wrap;
 }
 
+/* ========== Header Maquetado Para Moviles ========== */
+/*TODO MENU HAMBURGUESA*/
+
 @media (max-width:480px) { 
     .contenido-nav{
         display: none;
@@ -124,24 +125,47 @@ header a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow: hidden;     /*Medida Temporal. Un poco cutre*/
+        overflow: hidden;     
     }
 
     .contenido-inicio > img{
     width: auto;
     height: 200px;
-    object-fit: cover;   /*TODO QUE NO SE CORTE LA IMG*/
+    object-fit: cover;   
 }
 
     .links-redes{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         gap: var(--espaciado);
     }
 
     .logos-redes{
-        border: 2px solid red; /*TODO SOBREPONER IMG LINKS ENCIMA DEIMG MANCHURON*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        width: 100%;
+    }
+
+    .manchuron-azul{
+        z-index: 1;
+        width: 200px;
+        height: auto; /*TODO HACER LA IMAGEN MAS ALARGADA*/
+    }
+
+    .fotos-redes{
+        width: 150px;
+        height: 60px;
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: var(--espaciado);
+    }
+
+    .fotos-redes > a img{
+        z-index: 100;
+        width: 25px;
+        position: relative;
     }
 }
 
