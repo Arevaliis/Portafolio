@@ -66,15 +66,23 @@ header a{
     height: 500px;
     width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
 }
 
-.contenido-inicio > img{
+.mi-cara{
+    height: 100%;
+    width: 50%;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
+    margin-left: var(--espaciado);
+}
+
+.mi-cara > img{
     width: auto;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     animation: aparecer 2s ease;
 }
@@ -89,8 +97,10 @@ header a{
 }
 
 .titulo {
-        text-align: center;
-    }
+    text-align: center;    
+    margin-right: var(--espaciado);
+    font-size: 22px;     /*TODO EL TEXTO SE CORTA*/
+}
 
 .titulo span:first-of-type {
     color: rgb(247, 65, 65);
@@ -100,51 +110,13 @@ header a{
     color: rgb(67, 187, 252);
 }
 
-.links-redes{
+.logos-redes{
     padding: var(--espaciado);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-
-/* ========== Header Maquetado Para Moviles ========== */
-/*TODO MENU HAMBURGUESA*/
-
-@media (max-width:480px) { 
-    .contenido-nav{
-        display: none;
-    }
-
-    nav img{
-        display: inline;
-    }
-    
-    .contenido-inicio{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;     
-    }
-
-    .contenido-inicio > img{
-    width: auto;
-    height: 200px;
-    object-fit: cover;   
-}
-
-    .links-redes{
-        gap: var(--espaciado);
-    }
-
-    .logos-redes{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid red;
-        width: 100%;
-    }
 
     .manchuron-azul{
         z-index: 1;
@@ -166,6 +138,48 @@ header a{
         z-index: 100;
         width: 25px;
         position: relative;
+    }
+
+/* ========== Header Maquetado Para Moviles ========== */
+/*TODO MENU HAMBURGUESA*/
+
+@media (max-width:480px) { 
+    .contenido-nav{
+        display: none;
+    }
+
+    nav img{
+        display: inline;
+    }
+    
+    .contenido-inicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mi-cara{
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .mi-cara > img{
+        width: auto;
+        height: 225px;
+        object-fit: cover;   
+    }
+
+    .titulo{
+        font-size: 20px;
+        margin-left: var(--espaciado);
+    }
+
+    .logos-redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--espaciado);
     }
 }
 
@@ -213,7 +227,6 @@ header a{
 main {
     margin: 550px 0;
     padding: var(--espaciado);
-    border: 2px solid red;
 }
 
 /* ========== Seccion Sobre Mi ========== */
