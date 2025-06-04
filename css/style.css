@@ -5,7 +5,7 @@
 }
 
 :root{
-    --color-principal: rgb(20, 20, 20); 
+    --color-principal: rgb(11, 11, 11); 
     --color-letras: rgb(232, 232, 232);
     --espaciado: 20px;
 }
@@ -18,11 +18,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'FuenteSecundaria';
+    src: url('../assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ========== Body ========== */
 body{
     color: var(--color-letras);
     background-color: var(--color-principal);
     font-family: "FuentePrincipal";
+    letter-spacing: 3px;
 }
 
 /* ========== Header ========== */
@@ -43,7 +51,6 @@ header{
 nav img{
     width: 25px;
     display: none;
-    align-items: center;
 }
 
 .contenido-nav{
@@ -59,26 +66,27 @@ header a{
     color: var(--color-letras);
 }
 
-/* ========== Contenido-Inicio ========== */
-/*TODO ULTIMA REVISION*/
+/* ========== Main ========== */
+main {
+    margin: var(--espaciado);
+}
+
+/* ========== Seccion Contenido-Inicio ========== */
 
 .contenido-inicio{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: var(--espaciado);
     gap: var(--espaciado);
-    flex-wrap: wrap;
-    background-image: url("/assets/icons/png-clipart-watercolor-painting-paint-splash-purple-blue-removebg-preview.png"); 
+    background-image: url("/assets/icons/fondo-img.png"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    border: 2px solid red;
-
 }
 
 .mi-cara {
@@ -104,15 +112,18 @@ header a{
 }
 
 .links-redes{
-    gap: var(--espaciado);
     display: flex;
     flex-direction: column;
+    gap: var(--espaciado);
+}
+
+h1{
+    font-size: 50px;
 }
 
 .titulo {
     text-align: center;    
-    font-size: 22px;  
-
+    font-size: 27px;  
 }
 
 .titulo span:first-of-type {
@@ -132,7 +143,7 @@ header a{
 .manchuron-azul{
     z-index: 1;
     width: 280px;
-    height: 120px;
+    height: 100px;
 }
 
 .fotos-redes{
@@ -150,7 +161,7 @@ header a{
     position: relative;
 }
 
-/* ========== Contenido-Inicio Maquetado Para Moviles ========== */
+/* ========== Maquetado Para Moviles ========== */
 
 @media (max-width:480px) { 
     .contenido-nav{
@@ -165,53 +176,105 @@ header a{
         height: 200px;
     }
 
+    h1{
+        font-size: 30px;
+    }
     .titulo{
         font-size: 20px;
     }
-}
 
-/* ========== Main ========== */
-main {
-    margin: var(--espaciado);
+    .manchuron-azul{
+        width: 230px;
+        height: 85px;
+    }
+
+    .fotos-redes > a img{
+        width: 30px;
+    }
 }
 
 /* ========== Seccion Sobre Mi ========== */
 
-.titulo-sobre-mi h2{
-    text-decoration: overline; /*TODO Colocar bordes inferiores y superiores*/
-}
-.titulo-sobre-mi h2{
-    text-decoration: underline;
+.sobre-mi{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid red;
+    gap: var(--espaciado);
+    padding-right: var(--espaciado);
+    padding-left: 60px;
 }
 
 .contenido-sobre-mi{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    width: auto;
 }
 
-.info-sobre-mi{
-    text-align: justify;
-
+.contenido-sobre-mi > h2{
+    text-decoration: underline;
+    font-size: 50px;
 }
 
 .info-sobre-mi p{
+    text-align: justify;
     padding-top: var(--espaciado);
 }
 
 .skills{
-    display: flex;
-    flex-direction: column;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    align-items: center;
-    gap: 5px;
-    flex-wrap: wrap;
+    align-content: center;
+    gap: var(--espaciado);
+    border: 2px solid purple;
 }
 
-.skills span{
-    background-color: #565555;
-    width: 100px;
-    text-align: center;
-    border-radius: 5px;
+.skills span{                       
+    background-color: #3a3a3a;
+    max-width: 220px;
+    height: auto;
+    border-radius: 8px;
+    letter-spacing: 0;
+    font-family: "FuenteSecundaria";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rojo {
+    color:#E51B23;
+}
+
+.blanco {
+    color: #FFFFFF;
+}
+
+.azul {
+    color: #1BE5DD;
+}
+
+@media (max-width:1390px) { 
+    .contenido-sobre-mi > h2{
+        font-size: 30px;
+    }
+
+    .sobre-mi{
+        flex-direction: column;
+        padding-left: var(--espaciado);
+    }
+
+    .contenido-sobre-mi{
+        height: 50%;
+        width: 100%;
+    }
+
+    .skills{
+        height: 50%;
+        width: 100%;
+    }
 }
 
 /*TODO Media Query y Cambiar grid de columnas a filas*/
