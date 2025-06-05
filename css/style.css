@@ -97,7 +97,7 @@ main {
 
 .mi-cara > img{
     width: auto;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     animation: aparecer 2s ease;
 }
@@ -118,12 +118,12 @@ main {
 }
 
 h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .titulo {
     text-align: center;    
-    font-size: 27px;  
+    font-size: 20px;  
 }
 
 .titulo span:first-of-type {
@@ -142,8 +142,8 @@ h1{
 
 .manchuron-azul{
     z-index: 1;
-    width: 280px;
-    height: 100px;
+    width: 250px;
+    height: 80px;
 }
 
 .fotos-redes{
@@ -157,7 +157,7 @@ h1{
 
 .fotos-redes > a img{
     z-index: 100;
-    width: 35px;
+    width: 25px;
     position: relative;
 }
 
@@ -173,23 +173,27 @@ h1{
     }
 
     .mi-cara > img{
-        height: 200px;
+        height: 170px;
     }
 
     h1{
-        font-size: 30px;
+        font-size: 25px;
     }
     .titulo{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .manchuron-azul{
-        width: 230px;
-        height: 85px;
+        width: 200px;
+        height: 50px;
+    }
+
+    .fotos-redes{
+        justify-content: space-around;
     }
 
     .fotos-redes > a img{
-        width: 30px;
+        width: 20px;
     }
 }
 
@@ -198,18 +202,17 @@ h1{
 .sobre-mi{
     margin-top: 150px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     border: 2px solid red;
     gap: var(--espaciado);
-    padding-right: var(--espaciado);
-    padding-left: 60px;
 }
 
 .contenido-sobre-mi{
     border: 2px solid greenyellow;
-    display: flex;
-    flex-direction: column;
-    width: auto;
+    width: 65%;
+    height: auto;
 }
 
 .contenido-sobre-mi > h2{
@@ -220,22 +223,26 @@ h1{
 .info-sobre-mi p{
     text-align: justify;
     padding-top: var(--espaciado);
+    padding-right: var(--espaciado);
+    font-size: 20px;
+    padding-left: 40px;
 }
 
 .skills{
-    width: auto;
+    width: 30%;
+    height: 50%;    
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-content: center;
-    gap: var(--espaciado);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
     border: 2px solid purple;
+    padding: var(--espaciado);
 }
 
+/*TODO ARREGLAR PROBLEMA A 1200PX Y A 400PX*/
 .skills span{                       
     background-color: #3a3a3a;
     max-width: 220px;
-    height: auto;
+    height: 40px;
     border-radius: 8px;
     letter-spacing: 0;
     font-family: "FuenteSecundaria";
@@ -256,7 +263,7 @@ h1{
     color: #1BE5DD;
 }
 
-@media (max-width:1390px) { 
+@media (max-width:900px) { 
     .contenido-sobre-mi > h2{
         font-size: 30px;
     }
@@ -274,6 +281,7 @@ h1{
     .skills{
         height: 50%;
         width: 100%;
+        padding: var(--espaciado);
     }
 }
 
