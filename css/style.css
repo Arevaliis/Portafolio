@@ -6,7 +6,7 @@
 
 :root{
     --color-principal: rgb(11, 11, 11); 
-    --color-letras: rgb(232, 232, 232);
+    --color-letras: rgb(241, 241, 241);
     --espaciado: 20px;
 }
 
@@ -68,7 +68,7 @@ header a{
 
 /* ========== Main ========== */
 main {
-    margin: var(--espaciado);
+    margin: 80PX;
 }
 
 /* ========== Seccion Contenido-Inicio ========== */
@@ -80,7 +80,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: var(--espaciado);
     gap: var(--espaciado);
     background-image: url("/assets/icons/fondo-img.png"); 
     background-size: cover;
@@ -163,7 +162,7 @@ h1{
 
 /* ========== Maquetado Para Moviles ========== */
 
-@media (max-width:480px) { 
+@media (max-width:540px) { 
     .contenido-nav{
         display: none;
     }
@@ -203,21 +202,19 @@ h1{
     margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-evenly;
     align-items: center;
-    border: 2px solid red;
-    gap: var(--espaciado);
 }
 
 .contenido-sobre-mi{
-    border: 2px solid greenyellow;
-    width: 65%;
+    width: 68%;
     height: auto;
 }
 
 .contenido-sobre-mi > h2{
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .info-sobre-mi p{
@@ -234,14 +231,11 @@ h1{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
-    border: 2px solid purple;
     padding: var(--espaciado);
 }
 
-/*TODO ARREGLAR PROBLEMA A 1200PX Y A 400PX*/
 .skills span{                       
     background-color: #3a3a3a;
-    max-width: 220px;
     height: 40px;
     border-radius: 8px;
     letter-spacing: 0;
@@ -249,6 +243,12 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+}
+
+.skills span > img{
+    width: 25px;
+    object-fit: cover;
 }
 
 .rojo {
@@ -263,13 +263,12 @@ h1{
     color: #1BE5DD;
 }
 
-@media (max-width:900px) { 
+@media (max-width:1000px) { 
     .contenido-sobre-mi > h2{
-        font-size: 30px;
+    font-size: 30px;
     }
 
-    .sobre-mi{
-        flex-direction: column;
+    .info-sobre-mi p{ 
         padding-left: var(--espaciado);
     }
 
@@ -284,8 +283,6 @@ h1{
         padding: var(--espaciado);
     }
 }
-
-/*TODO Media Query y Cambiar grid de columnas a filas*/
 
 /* ========== Seccion Proyectos ========== */
 
