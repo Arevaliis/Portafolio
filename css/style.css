@@ -88,7 +88,7 @@ section{
     align-items: center;
     flex-wrap: wrap;
     gap: var(--espaciado);
-    background-image: url("/assets/icons/fondo-img.png"); 
+    background-image: url("/assets/icons/fondo-img.png"); /*TODO NO SE VE SI ABRO LA PAGINA COMO EL PROFESOR*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -298,12 +298,36 @@ h2{
 
 /* ========== Seccion Proyectos ========== */
 
+.contenido-proyectos{
+    border: 2px solid red;
+    gap: var(--espaciado);
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: var(--espaciado);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
 
 .contenido-proyectos img{
     width: 200px;
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.contenido-proyectos a{
+    text-decoration: none;
+    color: var(--color-letras);
+    font-family: "FuenteSecundaria";
+    font-size: 16px;
+    background-color: #cc1313;
+    border-radius: 2px;
+    letter-spacing: 0;
+    transition: background-color 1s; /*Es neceseraio? Mejor en la img?*/
+}
+
+.contenido-proyectos a:hover{
+    background-color: #cc13136d;
 }
 
 /* ========== Seccion Formulario ========== */
