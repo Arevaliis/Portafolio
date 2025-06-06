@@ -325,7 +325,6 @@ h2{
 @media (max-width:1070px){
     .contenido-proyectos{
         max-width: 100%;
-        padding: var(--espaciado);
     }
 }
 
@@ -336,7 +335,6 @@ h2{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .contenido-proyectos img{
