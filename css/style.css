@@ -71,9 +71,16 @@ main {
     margin: 80PX;
 }
 
+/* ========== Seccion ========== */
+
+section{
+    margin-top: 250px;
+}
+
 /* ========== Seccion Contenido-Inicio ========== */
 
 .contenido-inicio{
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -199,10 +206,8 @@ h1{
 /* ========== Seccion Sobre Mi ========== */
 
 .sobre-mi{
-    margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -212,7 +217,7 @@ h1{
     height: auto;
 }
 
-.contenido-sobre-mi > h2{
+h2{
     text-decoration: underline;
     font-size: 40px;
 }
@@ -264,7 +269,15 @@ h1{
 }
 
 @media (max-width:1000px) { 
-    .contenido-sobre-mi > h2{
+    main{
+        margin: var(--espaciado);
+    }
+
+    .sobre-mi{
+        gap: var(--espaciado);
+    }
+
+    h2{
     font-size: 30px;
     }
 
@@ -280,11 +293,18 @@ h1{
     .skills{
         height: 50%;
         width: 100%;
-        padding: var(--espaciado);
     }
 }
 
 /* ========== Seccion Proyectos ========== */
+
+
+.contenido-proyectos img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
 
 /* ========== Seccion Formulario ========== */
 
