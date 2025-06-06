@@ -297,22 +297,62 @@ h2{
 }
 
 /* ========== Seccion Proyectos ========== */
+.proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proyectos > h2{
+    align-self: flex-start;
+}
 
 .contenido-proyectos{
-    border: 2px solid red;
+    padding-top: 100px;
+    max-width: 60%;
     gap: var(--espaciado);
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: var(--espaciado);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+}
+
+@media (max-width:1360px){
+    .contenido-proyectos{
+        max-width: 80%;
+    }
+}
+
+@media (max-width:1070px){
+    .contenido-proyectos{
+        max-width: 100%;
+        padding: var(--espaciado);
+    }
+}
+
+.fotos{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .contenido-proyectos img{
-    width: 200px;
-    height: 150px;
+    width: 225px;
+    height: 170px;
     object-fit: cover;
     border-radius: 8px;
+    z-index: 20;
+    transition: opacity 0.55s ease-in-out, width 0.5s linear, height 0.5s linear;
+}
+
+.fotos:hover img{
+    z-index: 1;
+    width: 240px;
+    height: 180px;
+    opacity: 0.4;
 }
 
 .contenido-proyectos a{
@@ -320,16 +360,35 @@ h2{
     color: var(--color-letras);
     font-family: "FuenteSecundaria";
     font-size: 16px;
-    background-color: #cc1313;
-    border-radius: 2px;
+    background-color: #b30000;
+    border-radius: 3px;
     letter-spacing: 0;
-    transition: background-color 1s; /*Es neceseraio? Mejor en la img?*/
+    border: 2px solid rgb(249, 177, 177);
+    transition: background-color 0.5s ease-in-out; 
+    z-index: 10;
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenido-proyectos a:hover{
-    background-color: #cc13136d;
+    z-index: 100;
+    background-color: #4a0101;
 }
 
+@media (max-width:805px){
+    .contenido-proyectos{
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+    
+    .contenido-proyectos img{
+        width: 180px;
+        height: 130px;
+    }
+}
 /* ========== Seccion Formulario ========== */
 
 /* ========== Footer ========== */
