@@ -88,7 +88,7 @@ section{
     align-items: center;
     flex-wrap: wrap;
     gap: var(--espaciado);
-    background-image: url("/assets/icons/fondo-img.png"); /*TODO NO SE VE SI ABRO LA PAGINA COMO EL PROFESOR*/
+    background-image: url("../assets/icons/fondo-img.png"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -310,7 +310,7 @@ h2{
 
 .contenido-proyectos{
     padding-top: 100px;
-    max-width: 60%;
+    max-width: 55%;
     gap: var(--espaciado);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
