@@ -2,6 +2,15 @@
 <html lang="es">
 
 <!-- TODO W3C HTML Validator,Facebook Sharing Debugger, Twitter Card Validator Y Google Search Console-->
+<!-- TODO POPup COOKIES -->
+<!-- TODO PAGINA POLITICA DE PRIVACIDAD -->
+<!-- TODO AÑADIR DESCRIPCION DEL PROYECTO -->
+<!-- TODO AÑADIR CV -->
+<!-- TODO Hacer que solo aumento el proyecto seleccionado -->
+<!-- TODO HACER MEMORIA CON LA PLANTILLA PROPORCIONADA -->
+<!-- TODO AGREGAR MENU HAMBURGUESA -->
+<!-- TODO Terminar el head-->
+<!-- TODO AGREGAR REL a los enlaces-->
 
 <head>
     <meta charset="UTF-8">
@@ -47,14 +56,20 @@
 
 <body>
     <header>
-        <nav class="barra-inicio">
+        <nav class="barra-inicio" id="barra-inicio">
             <img src="assets/icons/menu-burger.png" alt="Menu Escondido">
             <ul class="contenido-nav">
                 <li>
                     <a href="#proyectos">Proyectos</a>
                 </li>
                 <li>
+                    <p>|</p>
+                </li>
+                <li>
                     <a href="#sobre-mi">Sobre Mí</a>
+                </li>
+                <li>
+                    <p>|</p>
                 </li>
                 <li>
                     <a href="#formularios">Contácteme</a>
@@ -168,13 +183,20 @@
                 </div>
             </div>
         </section>
-
-        <section class="formulario" id="formulario">
-
-        </section>
     </main>
     <footer class="pie-pagina">
-        <!-- TODO AGREGAR FLECHA PERMANTENTE PARA SUBIR INICIO -->
+        <div class="email">
+            <a href="mailto:joseiglesiasarevalo@gmail.com">joseiglesiasarevalo@gmail.com</a>
+        </div>
+        <div class="copyright">
+            <p>
+            © 2025 Jose Iglesias |
+            <a href="politica-privacidad.html" target="_blank" rel="noopener noreferrer">Política de Privacidad</a>
+            </p>        
+        </div>
+        <div class="volver-arriba">
+            <a href="#barra-inicio" target="_self"><img src="assets/icons/flecha-arriba.png" alt="volver arriba"></a>
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
