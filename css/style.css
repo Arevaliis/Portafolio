@@ -30,7 +30,8 @@ body{
     color: var(--color-letras);
     background-color: var(--color-principal);
     font-family: "FuentePrincipal";
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+
 }
 
 /* ========== Header ========== */
@@ -46,6 +47,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: var(--espaciado);
+    letter-spacing: 0;
 }
 
 nav img{
@@ -169,7 +171,7 @@ h1{
 
 /* ========== Maquetado Para Moviles ========== */
 
-@media (max-width:570px) { 
+@media (max-width:480px) { 
     .contenido-nav{
         display: none;
     }
@@ -396,12 +398,11 @@ h2{
     font-family: "FuenteSecundaria";
     font-size: 12px;
     display: flex;
-    justify-content: space-between;
-    gap: var(--espaciado);
-    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     margin: var(--espaciado);
     text-align: center;
+    letter-spacing: 0;
 }
 
 .pie-pagina a{
@@ -418,8 +419,9 @@ h2{
     transform: rotate(-90deg);
 }
 
-@media (max-width:1000px){
+@media (max-width:800px){
     .pie-pagina{
+        margin-top: 80px;
         flex-direction: column;
         font-size: 10px;
         gap: 10px;
@@ -427,6 +429,18 @@ h2{
 
     .volver-arriba img{
         width: 15px;
+    }
+
+    .volver-arriba{
+        order: 1;
+    }
+
+    .email{
+        order: 2;
+    }
+
+    .copyright{
+        order: 3;
     }
 }
 
