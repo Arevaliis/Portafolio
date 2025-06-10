@@ -376,37 +376,56 @@ h2{
     height: 170px;
     object-fit: cover;
     border-radius: 8px;
-    z-index: 20;
-    transition: opacity 0.55s ease-in-out, transform 0.3s;
+    transition: opacity 0.4s ease-in-out, transform 0.6s;
+    z-index: 100;
 }
 
 .fotos:hover img{
-    z-index: 1;
-    opacity: 0.4;
+    opacity: 0.22;
     transform: scale(1.1);
+    z-index: 1;
 }
 
-.contenido-proyectos a{
+.descripcion-proyecto{
+    color: var(--color-letras);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "FuenteSecundaria";
+    position: absolute;
+    z-index: 50;
+}
+
+.descripcion-proyecto h3{
+    font-size: 15px;
+}
+
+.descripcion-proyecto p{
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+}
+
+.descripcion-proyecto a{
     text-decoration: none;
     color: var(--color-letras);
     font-family: "FuenteSecundaria";
-    font-size: 16px;
-    background-color: #b30000;
+    font-size: 12px;
+    background-color: #ea0808;
     border-radius: 3px;
     letter-spacing: 0;
-    border: 2px solid rgb(249, 177, 177);
+    border: 2px solid rgb(188, 150, 150);
     transition: background-color 0.5s ease-in-out; 
-    z-index: 10;
-    position: absolute;
-    width: 140px;
-    height: 30px;
+    width: 102px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contenido-proyectos a:hover{
-    z-index: 100;
+.descripcion-proyecto a:hover{
     background-color: #4a0101;
 }
 
