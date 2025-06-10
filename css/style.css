@@ -42,30 +42,71 @@ header{
 /* ========== Header Nav ========== */
 /*TODO MENU HAMBURGUESA*/
 
-.barra-inicio{
-    display: flex-end;
+.cabecera{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--espaciado);
     letter-spacing: 0;
-}
-
-nav img{
-    width: 25px;
-    display: none;
-}
-
-.contenido-nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: var(--espaciado);
-    list-style: none;
+    position: relative;
+    padding: 10px;
 }
 
 header a{
     text-decoration: none;
     color: var(--color-letras);
+}
+
+header img{
+    width: 25px;
+    display: none;
+}
+
+.menu-principal{
+    display: flex;
+    align-items: center;
+    gap: var(--espaciado);
+}
+
+.menu-principal a:hover{
+    transform: scale(1.1);
+    color: #1ba5e5;
+}
+
+@media (max-width:480px){
+    .boton-menu img{
+        display: block;
+    }
+
+    .menu-principal{
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        background-color: #4e75b0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left:0;
+        padding: 15px 20px;
+        box-shadow: 0 6px 10px rgba(243, 238, 238, 0.2);
+        z-index: 100;
+    }
+
+    .menu-principal.menu-desplegado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-principal a{
+        padding: 10px 12px;
+        font-size: 17px;
+        color: var(--color-letras);
+    }
+
+    .menu-principal a:hover{
+        color: #150707;
+        transform: scale(1.15);
+    }
 }
 
 /* ========== Main ========== */
@@ -172,14 +213,10 @@ h1{
 /* ========== Maquetado Para Moviles ========== */
 
 @media (max-width:480px) { 
-    .contenido-nav{
-        display: none;
+    main{
+        margin: var(--espaciado);
     }
-
-    nav img{
-        display: inline;
-    }
-
+    
     .mi-cara > img{
         height: 170px;
     }
@@ -271,10 +308,6 @@ h2{
 }
 
 @media (max-width:1000px) { 
-    main{
-        margin: var(--espaciado);
-    }
-
     .sobre-mi{
         gap: var(--espaciado);
     }
@@ -390,6 +423,12 @@ h2{
 }
 
 /* ========== Footer ========== */
+footer{
+    margin-top: 180px;
+    margin-bottom: var(--espaciado);
+    margin-left: var(--espaciado);
+    margin-right: var(--espaciado);
+}
 
 .pie-pagina{
     width: auto;
@@ -397,9 +436,8 @@ h2{
     font-family: "FuenteSecundaria";
     font-size: 12px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin: var(--espaciado);
     text-align: center;
     letter-spacing: 0;
 }
@@ -420,7 +458,6 @@ h2{
 
 @media (max-width:800px){
     .pie-pagina{
-        margin-top: 80px;
         flex-direction: column;
         font-size: 10px;
         gap: 10px;

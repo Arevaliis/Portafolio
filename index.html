@@ -2,14 +2,12 @@
 <html lang="es">
 
 <!-- TODO W3C HTML Validator,Facebook Sharing Debugger, Twitter Card Validator Y Google Search Console-->
+
 <!-- TODO POPup COOKIES -->
 <!-- TODO PAGINA POLITICA DE PRIVACIDAD -->
 <!-- TODO AÑADIR DESCRIPCION DEL PROYECTO --> <!-- URGE-->
-<!-- TODO AÑADIR CV -->
 <!-- TODO HACER MEMORIA CON LA PLANTILLA PROPORCIONADA -->
-<!-- TODO AGREGAR MENU HAMBURGUESA -->
 <!-- TODO Terminar el head-->
-<!-- TODO AGREGAR REL a los enlaces-->
 
 <head>
     <meta charset="UTF-8">
@@ -45,26 +43,13 @@
 </head>
 
 <body>
-    <header>
-        <nav class="barra-inicio" id="barra-inicio">
-            <img src="assets/icons/menu-burger.png" alt="Menu Escondido">
-            <ul class="contenido-nav">
-                <li>
-                    <a href="#proyectos">Proyectos</a>
-                </li>
-                <li>
-                    <p>|</p>
-                </li>
-                <li>
-                    <a href="#sobre-mi">Sobre Mí</a>
-                </li>
-                <li>
-                    <p>|</p>
-                </li>
-                <li>
-                    <a href="docs/CV_JOSE_IGLESIAS_AREVALO.pdf" target="_blank">Ver CV</a>
-                </li>
-            </ul>
+    <header class="cabecera">
+        <a href="#" id="enlace-menu" class="boton-menu" ><img src="assets/icons/menu-burger.png" alt="Menu Escondido"></a>
+        
+        <nav class="menu-principal" id="menu">
+            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="docs/CV_JOSE_IGLESIAS_AREVALO.pdf" target="_blank" rel="noopener noreferrer">Ver CV</a>
         </nav>
     </header>
 
@@ -85,12 +70,9 @@
                     <img class="manchuron-azul" src="assets/icons/manchuron_azul.png"
                         alt="Fondo donde van los iconos de las redes">
                     <div class="fotos-redes">
-                        <a href="https://www.linkedin.com/in/jose-iglesias-ar%C3%A9valo-812860206/" target="_blank"><img
-                                src="assets/icons/linkedin.png" alt="Logo de Linkedin"></a>
-                        <a href="https://github.com/Arevaliis" target="_blank"><img
-                                src="assets/icons/github_logo_icon_248225.svg" alt="Logo de GitHub"></a>
-                        <a href="mailto:joseiglesiasarevalo@gmail.com" target="_blank"><img src="assets/icons/gmail.png"
-                                alt="Logo de Gmail"></a>
+                        <a href="https://www.linkedin.com/in/jose-iglesias-ar%C3%A9valo-812860206/" target="_blank" rel="noopener noreferrer"><img src="assets/icons/linkedin.png" alt="Logo de Linkedin"></a>
+                        <a href="https://github.com/Arevaliis" target="_blank" rel="noopener noreferrer"><img src="assets/icons/github_logo_icon_248225.svg" alt="Logo de GitHub"></a>
+                        <a href="mailto:joseiglesiasarevalo@gmail.com" target="_blank" rel="noopener noreferrer"><img src="assets/icons/gmail.png" alt="Logo de Gmail"></a>
                     </div>
                 </div>
             </div>
@@ -148,35 +130,35 @@
             <h2>MIS PROYECTOS:</h2>
             <div class="contenido-proyectos">
                 <div class="fotos">
-                    <img src="assets/img/proyecto-1.jpg" alt="Imagen Proyecto programación">
-                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank">Ver Proyecto | -></a>
+                    <img src="assets/img/proyecto-1.webp" alt="Imagen Proyecto programación" loading="eager">
+                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
                 </div>
                 <div class="fotos">
-                    <img src="assets/img/proyecto-2.jpg" alt="Imagen Proyecto programación">
-                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank">Ver Proyecto | -></a>
+                    <img src="assets/img/proyecto-2.webp" alt="Imagen Proyecto programación" loading="eager">
+                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
                 </div>
                 <div class="fotos">
-                    <img src="assets/img/proyecto-1.jpg" alt="Imagen Proyecto programación">
-                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank">Ver Proyecto | -></a>
+                    <img src="assets/img/proyecto-1.webp" alt="Imagen Proyecto programación" loading="eager">
+                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
                 </div>
                 <div class="fotos">
-                    <img src="assets/img/proyecto-2.jpg" alt="Imagen Proyecto programación">
-                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank">Ver Proyecto | -></a>
+                    <img src="assets/img/proyecto-2.webp" alt="Imagen Proyecto programación" loading="lazy">
+                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
                 </div>
                 <div class="fotos">
-                    <img src="assets/img/proyecto-1.jpg" alt="Imagen Proyecto programación">
-                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank">Ver Proyecto | -></a>
+                    <img src="assets/img/proyecto-1.webp" alt="Imagen Proyecto programación" loading="lazy">
+                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
                 </div>
                 <div class="fotos">
-                    <img src="assets/img/proyecto-2.jpg" alt="Imagen Proyecto programación">
-                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank">Ver Proyecto | -></a>
+                    <img src="assets/img/proyecto-2.webp" alt="Imagen Proyecto programación" loading="lazy">
+                    <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
                 </div>
             </div>
         </section>
     </main>
     <footer class="pie-pagina">
         <div class="email">
-            <a href="mailto:joseiglesiasarevalo@gmail.com">joseiglesiasarevalo@gmail.com</a>
+            <a href="mailto:joseiglesiasarevalo@gmail.com" target="_blank" rel="noopener noreferrer">joseiglesiasarevalo@gmail.com</a>
         </div>
         <div class="copyright">
             <p>
@@ -185,7 +167,7 @@
             </p>
         </div>
         <div class="volver-arriba">
-            <a href="#barra-inicio" target="_self"><img src="assets/icons/flecha-arriba.png" alt="volver arriba"></a>
+            <a href="#enlace-menu" target="_self"><img src="assets/icons/flecha-arriba.png" alt="volver arriba"></a>
         </div>
     </footer>
     <script src="js/script.js"></script>
