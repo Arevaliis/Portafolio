@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- TODO Google Search Console-->
-<!-- TODO POPup COOKIES -->
-
-<!-- TODO HACER MEMORIA CON LA PLANTILLA PROPORCIONADA -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,10 +37,9 @@
 </head>
 
 <body>
+    <!-- Barra Inicio -->
     <header class="cabecera" id="up">
-        <a href="#" id="enlace-menu" class="boton-menu"><img src="assets/icons/menu-burger.png"
-                alt="Menu Escondido"></a>
-
+        <a href="#" id="enlace-menu" class="boton-menu"><img src="assets/icons/menu-burger.png" alt="Menu Escondido"></a>
         <nav class="menu-principal" id="menu">
             <a href="#proyectos">Proyectos</a>
             <a href="#sobre-mi">Sobre Mí</a>
@@ -54,146 +48,152 @@
     </header>
 
     <main>
-        <section class="contenido-inicio">
-            <div class="mi-cara">
-                <img src="assets/img/mi-cara.webp" alt="Foto Creador de la Pagina">
-            </div>
-            <div class="links-redes">
-                <div class="titulo">
-                    <h1>Soy Jose,</h1>
-                    <span> estudiante</span>
-                    <span> de Desarrollo de Aplicaciones Multiplataforma /</span>
-                    <span> DAM</span>
-                </div>
+        <!-- PopUp Cookies -->
+        <div class="cookie-popup" id="cookiePopUp">
+            <p>Este sitio utiliza cookies para mejorar tu experiencia. <a href="docs/politicaCookies.pdf" target="_blank" rel="noopener noreferrer">Saber mas</a>
+            </p>
+            <button id="acceptCookies">Aceptar</button>
+        </div>
 
-                <div class="logos-redes">
-                    <img class="manchuron-azul" src="assets/icons/manchuron_azul.png"
-                        alt="Fondo donde van los iconos de las redes">
-                    <div class="fotos-redes">
-                        <a href="https://www.linkedin.com/in/jose-iglesias-ar%C3%A9valo-812860206/" target="_blank"
-                            rel="noopener noreferrer"><img src="assets/icons/linkedin.png" alt="Logo de Linkedin"></a>
-                        <a href="https://github.com/Arevaliis" target="_blank" rel="noopener noreferrer"><img
-                                src="assets/icons/github_logo_icon_248225.svg" alt="Logo de GitHub"></a>
-                        <a href="mailto:joseiglesiasarevalo@gmail.com" target="_blank" rel="noopener noreferrer"><img
-                                src="assets/icons/gmail.png" alt="Logo de Gmail"></a>
+        <!-- Contenido Main -->
+        <div class="contenido-total" id="cont-total">
+            
+            <!-- Mi Cara -->
+            <section class="contenido-inicio">
+                <div class="mi-cara">
+                    <img src="assets/img/mi-cara.webp" alt="Foto Creador de la Pagina">
+                </div>
+                <div class="links-redes">
+                    <div class="titulo">
+                        <h1>Soy Jose,</h1>
+                        <span> estudiante</span>
+                        <span> de Desarrollo de Aplicaciones Multiplataforma /</span>
+                        <span> DAM</span>
+                    </div>
+                    <div class="logos-redes">
+                        <img class="manchuron-azul" src="assets/icons/manchuron_azul.png"
+                            alt="Fondo donde van los iconos de las redes">
+                        <div class="fotos-redes">
+                            <a href="https://www.linkedin.com/in/jose-iglesias-ar%C3%A9valo-812860206/" target="_blank"
+                                rel="noopener noreferrer"><img src="assets/icons/linkedin.png"
+                                    alt="Logo de Linkedin"></a>
+                            <a href="https://github.com/Arevaliis" target="_blank" rel="noopener noreferrer"><img
+                                    src="assets/icons/github_logo_icon_248225.svg" alt="Logo de GitHub"></a>
+                            <a href="mailto:joseiglesiasarevalo@gmail.com" target="_blank"
+                                rel="noopener noreferrer"><img src="assets/icons/gmail.png" alt="Logo de Gmail"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="sobre-mi" id="sobre-mi">
-            <div class="contenido-sobre-mi">
-                <article class="info-sobre-mi">
-                    <h2>SOBRE MI:</h2>
-                    <p>Mi nombre es Jose Iglesias y actualmente soy estudiante de Desarrollo de Aplicaciones
-                        Multiplataforma (DAM). Tras haberme formado inicialmente en el ámbito del Derecho, decidí
-                        redirigir mi carrera profesional hacia el sector tecnológico, atraído por el enorme potencial de
-                        transformación que ofrece y motivado por un profundo interés en la programación, el desarrollo
-                        web y el análisis de datos.</p>
-                    <p>Desde entonces, he dedicado todo mi tiempo y esfuerzo a construir una formación sólida y
-                        versátil, combinando el estudio autodidacta con programas oficiales. En este camino, he
-                        adquirido competencias en lenguajes como Java, Python, JavaScript y SQL, así como en
-                        herramientas y tecnologías como Git, GitHub, HTML, CSS, Power BI y MySQL.</p>
-                    <p>Uno de mis principales intereses es el análisis de datos, área en la que combino habilidades
-                        técnicas y pensamiento crítico para obtener información valiosa a partir de conjuntos de datos
-                        complejos. Me interesa especialmente la limpieza, transformación y visualización de datos, así
-                        como la presentación de resultados de forma clara y comprensible para distintos públicos.</p>
-                    <p>Me considero una persona constante, disciplinada y con muchas ganas de aprender. En mi tiempo
-                        libre sigo mejorando mis habilidades técnicas, y combino esto con hábitos saludables como el
-                        deporte, la lectura y el ocio. Este portafolio refleja no solo mi progreso, sino también mi
-                        compromiso con el desarrollo personal y profesional.</p>
-                </article>
-            </div>
-            <div class="skills">
-                <span class="azul">JavaScript<img src="assets/icons/JS.png" alt="icono JavaScript"></span>
-                <span class="rojo">Git <img src="assets/icons/Git.png" alt="icono de Git"></span>
-                <span class="blanco">GitHub<img src="assets/icons/github_logo_icon_248225.svg"
-                        alt="icono de GitHub"></span>
-                <span class="rojo">VSCode<img src="assets/icons/VSC.png" alt="icono de Visual Studio Code"></span>
-                <span class="azul">PyCharm<img src="assets/icons/Pycharm.png" alt="icono de PyCharm"></span>
-                <span class="blanco">IntelliJ<img src="assets/icons/Intellij.png" alt="icono de IntelliJ"></span>
-                <span class="rojo">MySQL<img src="assets/icons/MySql.png" alt="icono de MySQL"></span>
-                <span class="azul">SQLite<img src="assets/icons/SQLite.png" alt="icono de SQLite"></span>
-                <span class="blanco">Power BI<img src="assets/icons/PowerBi.png" alt="icono de Power BI"></span>
-                <span class="azul">Pandas<img src="assets/icons/pandas1.png"
-                        alt="icono de la libreria de Python Pandas"></span>
-                <span class="rojo">NumPy<img src="assets/icons/np.png"
-                        alt="icono de la libreria de Python Numpy"></span>
-                <span class="blanco">Matplotlib<img src="assets/icons/plt.png"
-                        alt="icono de la libreria de Python Matplotlib"></span>
-                <span class="azul">Seaborn<img src="assets/icons/sns.png"
-                        alt="icono de la libreria de Python Seaborn"></span>
-                <span class="rojo">Figma<img src="assets/icons/figma.png" alt="icono de figma"></span>
-                <span class="azul">APIs REST<img src="assets/icons/API.png" alt="icono de API REST"></span>
-                <span class="azul">Python<img src="assets/icons/python.png" alt="icono de Python"></span>
-            </div>
-        </section>
-
-        <section class="proyectos" id="proyectos">
-            <h2>MIS PROYECTOS:</h2>
-            <div class="contenido-proyectos">
-                <div class="fotos">
-                    <img src="assets/img/proyecto-1.webp" alt="Imagen Proyecto programación" loading="eager">
-                    <div class="descripcion-proyecto">
-                        <h3>Gestor de Tareas</h3>
-                        <p>Aplicación web para crear, editar y organizar tareas con almacenamiento local.</p>
-                        <a href="https://github.com/Arevaliis?tab=repositories" target="_blank"
-                            rel="noopener noreferrer">Ver Proyecto | -></a>
+            </section>
+    
+            <!-- Informacion Sobre Mi -->
+            <section class="sobre-mi" id="sobre-mi">
+                <div class="contenido-sobre-mi">
+                    <article class="info-sobre-mi">
+                        <h2>SOBRE MI:</h2>
+                        <p>Mi nombre es Jose Iglesias y actualmente soy estudiante de Desarrollo de Aplicaciones
+                            Multiplataforma (DAM). Tras haberme formado inicialmente en el ámbito del Derecho, decidí
+                            redirigir mi carrera profesional hacia el sector tecnológico, atraído por el enorme
+                            potencial de
+                            transformación que ofrece y motivado por un profundo interés en la programación, el
+                            desarrollo
+                            web y el análisis de datos.</p>
+                        <p>Desde entonces, he dedicado todo mi tiempo y esfuerzo a construir una formación sólida y
+                            versátil, combinando el estudio autodidacta con programas oficiales. En este camino, he
+                            adquirido competencias en lenguajes como Java, Python, JavaScript y SQL, así como en
+                            herramientas y tecnologías como Git, GitHub, HTML, CSS, Power BI y MySQL.</p>
+                        <p>Uno de mis principales intereses es el análisis de datos, área en la que combino habilidades
+                            técnicas y pensamiento crítico para obtener información valiosa a partir de conjuntos de
+                            datos
+                            complejos. Me interesa especialmente la limpieza, transformación y visualización de datos,
+                            así
+                            como la presentación de resultados de forma clara y comprensible para distintos públicos.
+                        </p>
+                        <p>Me considero una persona constante, disciplinada y con muchas ganas de aprender. En mi tiempo
+                            libre sigo mejorando mis habilidades técnicas, y combino esto con hábitos saludables como el
+                            deporte, la lectura y el ocio. Este portafolio refleja no solo mi progreso, sino también mi
+                            compromiso con el desarrollo personal y profesional.</p>
+                    </article>
+                </div>
+                <div class="skills">
+                    <span class="azul">JavaScript<img src="assets/icons/JS.png" alt="icono JavaScript"></span>
+                    <span class="rojo">Git <img src="assets/icons/Git.png" alt="icono de Git"></span>
+                    <span class="blanco">GitHub<img src="assets/icons/github_logo_icon_248225.svg" alt="icono de GitHub"></span>
+                    <span class="rojo">VSCode<img src="assets/icons/VSC.png" alt="icono de Visual Studio Code"></span>
+                    <span class="azul">PyCharm<img src="assets/icons/Pycharm.png" alt="icono de PyCharm"></span>
+                    <span class="blanco">IntelliJ<img src="assets/icons/Intellij.png" alt="icono de IntelliJ"></span>
+                    <span class="rojo">MySQL<img src="assets/icons/MySql.png" alt="icono de MySQL"></span>
+                    <span class="azul">SQLite<img src="assets/icons/SQLite.png" alt="icono de SQLite"></span>
+                    <span class="blanco">Power BI<img src="assets/icons/PowerBi.png" alt="icono de Power BI"></span>
+                    <span class="azul">Pandas<img src="assets/icons/pandas1.png" alt="icono de la libreria de Python Pandas"></span>
+                    <span class="rojo">NumPy<img src="assets/icons/np.png" alt="icono de la libreria de Python Numpy"></span>
+                    <span class="blanco">Matplotlib<img src="assets/icons/plt.png" alt="icono de la libreria de Python Matplotlib"></span>
+                    <span class="azul">Seaborn<img src="assets/icons/sns.png" alt="icono de la libreria de Python Seaborn"></span>
+                    <span class="rojo">Figma<img src="assets/icons/figma.png" alt="icono de figma"></span>
+                    <span class="azul">APIs REST<img src="assets/icons/API.png" alt="icono de API REST"></span>
+                    <span class="azul">Python<img src="assets/icons/python.png" alt="icono de Python"></span>
+                </div>
+            </section>
+            
+            <!-- Mis Proyextos -->
+            <section class="proyectos" id="proyectos">
+                <h2>MIS PROYECTOS:</h2>
+                <div class="contenido-proyectos">
+                    <div class="fotos">
+                        <img src="assets/img/proyecto-1.webp" alt="Imagen Proyecto programación" loading="eager">
+                        <div class="descripcion-proyecto">
+                            <h3>Gestor de Tareas</h3>
+                            <p>Aplicación web para crear, editar y organizar tareas con almacenamiento local.</p>
+                            <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
+                        </div>
+                    </div>
+                    <div class="fotos">
+                        <img src="assets/img/proyecto-2.webp" alt="Imagen Proyecto programación" loading="lazy">
+                        <div class="descripcion-proyecto">
+                            <h3>Clon de YouTube</h3>
+                            <p>Interfaz web que simula la experiencia de navegación en YouTube, con HTML, CSS y JS.</p>
+                            <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
+                        </div>
+                    </div>
+                    <div class="fotos">
+                        <img src="assets/img/proyecto-1.webp" alt="Imagen Proyecto programación" loading="eager">
+                        <div class="descripcion-proyecto">
+                            <h3>App del Tiempo</h3>
+                            <p>Consulta el clima actual en cualquier ciudad usando la API de OpenWeatherMap.</p>
+                            <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
+                        </div>
+                    </div>
+                    <div class="fotos">
+                        <img src="assets/img/proyecto-2.webp" alt="Imagen Proyecto programación" loading="lazy">
+                        <div class="descripcion-proyecto">
+                            <h3>Adivina el Número</h3>
+                            <p>Juego simple en JavaScript donde el usuario debe adivinar un número aleatorio.</p>
+                            <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
+                        </div>
+                    </div>
+                    <div class="fotos">
+                        <img src="assets/img/proyecto-1.webp" alt="Imagen Proyecto programación" loading="eager">
+                        <div class="descripcion-proyecto">
+                            <h3>Calculadora Web</h3>
+                            <p>Calculadora funcional desarrollada en HTML, CSS y JavaScript puro.</p>
+                            <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
+                        </div>
+                    </div>
+                    <div class="fotos">
+                        <img src="assets/img/proyecto-2.webp" alt="Imagen Proyecto programación" loading="lazy">
+                        <div class="descripcion-proyecto">
+                            <h3>Buscador Películas</h3>
+                            <p>Web que permite buscar películas y ver detalles usando la API de OMDb.</p>
+                            <a href="https://github.com/Arevaliis?tab=repositories" target="_blank" rel="noopener noreferrer">Ver Proyecto | -></a>
+                        </div>
                     </div>
                 </div>
-                <div class="fotos">
-                    <img src="assets/img/proyecto-2.webp" alt="Imagen Proyecto programación" loading="lazy">
-                    <div class="descripcion-proyecto">
-                        <h3>Clon de YouTube</h3>
-                        <p>Interfaz web que simula la experiencia de navegación en YouTube, con HTML, CSS y JS.</p>
-                        <a href="https://github.com/Arevaliis?tab=repositories" target="_blank"
-                            rel="noopener noreferrer">Ver Proyecto | -></a>
-                    </div>
-                </div>
-                <div class="fotos">
-                    <img src="assets/img/proyecto-1.webp" alt="Imagen Proyecto programación" loading="eager">
-                    <div class="descripcion-proyecto">
-                        <h3>App del Tiempo</h3>
-                        <p>Consulta el clima actual en cualquier ciudad usando la API de OpenWeatherMap.</p>
-                        <a href="https://github.com/Arevaliis?tab=repositories" target="_blank"
-                            rel="noopener noreferrer">Ver Proyecto | -></a>
-                    </div>
-                </div>
-                <div class="fotos">
-                    <img src="assets/img/proyecto-2.webp" alt="Imagen Proyecto programación" loading="lazy">
-                    <div class="descripcion-proyecto">
-                        <h3>Adivina el Número</h3>
-                        <p>Juego simple en JavaScript donde el usuario debe adivinar un número aleatorio.</p>
-                        <a href="https://github.com/Arevaliis?tab=repositories" target="_blank"
-                            rel="noopener noreferrer">Ver Proyecto | -></a>
-                    </div>
-                </div>
-                <div class="fotos">
-                    <img src="assets/img/proyecto-1.webp" alt="Imagen Proyecto programación" loading="eager">
-                    <div class="descripcion-proyecto">
-                        <h3>Calculadora Web</h3>
-                        <p>Calculadora funcional desarrollada en HTML, CSS y JavaScript puro.</p>
-                        <a href="https://github.com/Arevaliis?tab=repositories" target="_blank"
-                            rel="noopener noreferrer">Ver Proyecto | -></a>
-                    </div>
-                </div>
-                <div class="fotos">
-                    <img src="assets/img/proyecto-2.webp" alt="Imagen Proyecto programación" loading="lazy">
-                    <div class="descripcion-proyecto">
-                        <h3>Buscador Películas</h3>
-                        <p>Web que permite buscar películas y ver detalles usando la API de OMDb.</p>
-                        <a href="https://github.com/Arevaliis?tab=repositories" target="_blank"
-                            rel="noopener noreferrer">Ver Proyecto | -></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+            </section>
+        </div>
     </main>
     <footer class="pie-pagina">
         <div class="email">
-            <a href="mailto:joseiglesiasarevalo@gmail.com" target="_blank"
-                rel="noopener noreferrer">joseiglesiasarevalo@gmail.com</a>
+            <a href="mailto:joseiglesiasarevalo@gmail.com" target="_blank" rel="noopener noreferrer">joseiglesiasarevalo@gmail.com</a>
         </div>
         <div class="copyright">
             <p>
