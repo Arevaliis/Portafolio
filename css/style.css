@@ -80,7 +80,7 @@ header img{
         display: none;
         flex-direction: column;
         gap: 8px;
-        background-color: #4e75b0;
+        background-color: #265eb1ad;
         position: absolute;
         top: 100%;
         right: 0;
@@ -103,7 +103,7 @@ header img{
     }
 
     .menu-principal a:hover{
-        color: #150707;
+        color: #43ea10;
         transform: scale(1.15);
     }
 }
@@ -418,7 +418,7 @@ h2{
     letter-spacing: 0;
     border: 2px solid rgb(188, 150, 150);
     transition: background-color 0.5s ease-in-out; 
-    width: 102px;
+    width: 110px;
     height: 20px;
     display: flex;
     align-items: center;
