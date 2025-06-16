@@ -5,11 +5,11 @@
 }
 
 :root{
-    --color-letra:  rgb(5, 43, 195);
+    --color-letra:  rgb(3, 33, 155);
 }
 
 body{
-    background-color: rgb(237, 232, 225);
+    background-color: rgb(249, 249, 249);
     line-height: 1.5;
     margin-top: 30px;
 }
@@ -70,25 +70,8 @@ footer{
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
     main {
-    padding: 5px 30px;
+    padding: 10px 40px;
     }
-
-    h1{
-        font-size: 15px;
-    }
-
-    h2{
-        font-size: 12px;
-    }
-
-    h3{
-        font-size: 15px;
-    }
-
-    p, li{
-        font-size: 12px;
-    }
-
 }
