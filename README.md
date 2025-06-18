@@ -6,8 +6,11 @@ Proyecto personal para mostrar quién soy, mis habilidades y algunos de los proy
 
 ## 📌 Estado del Proyecto
 
-**Versión:** 1.0  
+- **Versión:** 1.0  
 **Estado:** ✅ Completado
+
+- **Versión:** 2.0  
+**Estado:** 🚧 En progreso
 
 ---
 

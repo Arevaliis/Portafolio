@@ -9,9 +9,30 @@
 }
 
 body{
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(238, 238, 238);
     line-height: 1.5;
-    margin-top: 30px;
+}
+
+header{
+    background-color: var(--color-letra);
+    min-height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.volver{
+    padding-right: 60px;
+}
+
+.volver a{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.volver a:hover{
+    color: rgb(255, 255, 255);    
+    font-size: 27px;
 }
 
 main{
