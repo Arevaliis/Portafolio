@@ -52,6 +52,7 @@ header{
 header a{
     text-decoration: none;
     color: var(--color-letras);
+    font-size: 24px;
 }
 
 header img{
@@ -401,6 +402,95 @@ h2{
     }
 }
 
+/* ========== Seccion Curriculum Vitae ========== */
+
+.cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--espaciado);
+}
+
+.cv h2{
+    align-self: flex-start;
+}
+
+.cv h3{
+    font-size: 30px;
+    text-decoration: underline;
+}
+.cv article{
+    text-align: center;
+    margin-top: var(--espaciado);
+}
+
+.cv ul{
+    list-style: none;
+    text-align: center;
+    font-size: 23px;
+    margin-top: var(--espaciado);
+}
+
+.cv li{
+    margin-top: 10px;
+}
+
+.enlace-cv{
+    padding: var(--espaciado);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlace-cv a{
+    font-size: 22px;
+    text-decoration: none;
+    border: 3px solid red;
+    border-radius: 8px;
+    color: rgb(242, 6, 6);
+    transition: background-color 0.5s ease-in-out; 
+    transition: color 0.5s ease-in-out;
+    transition: box-shadow 0.35s ease-in-out;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlace-cv a:hover{
+    color: rgb(224, 221, 221);
+    background-color: rgb(143, 18, 18);
+    border: 2px solid #e2dbdb;
+    box-shadow: 0px 0px 15px 3px rgba(248,238,238,1);
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(248,238,238,1);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(248,238,238,1);
+}
+
+@media (max-width:500px) {
+    .cv h3{
+    font-size: 22px;
+    }
+
+    .cv ul{
+        font-size: 18px;
+    }
+
+    .enlace-cv a{
+    height: 40px;
+    width: 80px;
+    font-size: 18px;
+}
+
+.enlace-cv a:hover{
+    color: black;
+    background-color: rgb(177, 84, 84);
+}
+}
+
+
 /* ========== Seccion Proyectos ========== */
 .proyectos{
     display: flex;
@@ -591,13 +681,13 @@ footer{
     background-color: rgb(131, 179, 194);
     border-radius: 50%;
     border: 1.5px solid rgb(255, 255, 255);
-    transition: 0.5s ease-in-out;
+    transition: 0.35s ease-in-out;
 }
 
 .volver-arriba img:hover{
-    box-shadow: 0px 0px 15px 5px rgba(248,238,238,1);
-    -webkit-box-shadow: 0px 0px 15px 5px rgba(248,238,238,1);
-    -moz-box-shadow: 0px 0px 15px 5px rgba(248,238,238,1);
+    box-shadow: 0px 0px 15px 3px rgba(248,238,238,1);
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(248,238,238,1);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(248,238,238,1);
 }
 
 @media (max-width:800px){
