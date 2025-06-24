@@ -29,9 +29,13 @@
 /* ========== Body ========== */
 body{
     color: var(--color-letras);
-    background-color: var(--color-principal);
     font-family: "FuentePrincipal";
     letter-spacing: 2px;
+    background-image: url("../assets/img/fondo-estrellado.webp"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* ========== Header ========== */
@@ -78,7 +82,7 @@ header img{
 
 /* ===== Menu Responsive =====*/
 
-@media (max-width:480px){
+@media (max-width:580px){
     .boton-menu img{
         display: block;
         transition: transform 1s ease;
@@ -113,7 +117,7 @@ header img{
     }
 
     .menu-principal a:hover{
-        color: #43ea10;
+        color: #0f100f;
         transform: scale(1.25);
     }
 }
@@ -195,24 +199,13 @@ section{
     align-items: center;
     flex-wrap: wrap;
     gap: var(--espaciado);
-    background-image: url("../assets/icons/fondo-img.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .mi-cara{
     width: 50%;
     display: flex;
     justify-content: center;
-}
-
-.mi-cara > img{
-    width: auto;
-    height: 250px;
-    object-fit: cover;
-    animation: aparecer 2s ease-in-out;
+    animation: aparecer 1.5s ease-in-out;
 }
 
 @keyframes aparecer{
@@ -225,7 +218,9 @@ section{
         transform: translateY(0);
     }
 }
-
+.mi-cara > img{
+    object-fit: cover;
+}
 
 .links-redes{
     display: flex;
@@ -282,7 +277,7 @@ h1{
 }
 /* ========== Maquetado Para Moviles ========== */
 
-@media (max-width:480px) { 
+@media (max-width:580px) { 
     main{
         margin: var(--espaciado);
     }
@@ -529,7 +524,7 @@ h2{
 }
 
 .fotos:hover img{
-    opacity: 0.22;
+    opacity: 0.6;
     transform: scale(1.1);
     z-index: 1;
 }
@@ -619,7 +614,7 @@ h2{
     }
 }
 
-@media (max-width:695px){
+@media (max-width:735px){
     .contenido-proyectos{   
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }

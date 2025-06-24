@@ -10,7 +10,7 @@ Proyecto personal para mostrar quién soy, mis habilidades y algunos de los proy
 **Estado:** ✅ Completado
 
 - **Versión:** 2.0  
-**Estado:** 🚧 En progreso
+**Estado:** ✅ Completado
 
 ---
 
