@@ -8,7 +8,6 @@ const contTotal = document.getElementById("cont-total");
 
 if(!localStorage.cookiesAccepted){
     popup.classList.add("show");
-    contTotal.classList.add("show");
 }
 
 btn.addEventListener("click", function(){
@@ -37,3 +36,12 @@ function despliegaMenu(){
 }
 
 nav();
+
+const body = document.getElementsByTagName("body")[0];
+const esIos  = navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) ||  navigator.userAgent.match(/iPod/i)
+
+if (esIos && screen.width <= 480){
+        body.style.backgroundImage = "none";
+        body.style.backgroundColor = "rgb(12, 12, 12)";
+        body.style.backgroundAttachment = "scroll";
+    }
