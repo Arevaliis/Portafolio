@@ -32,10 +32,10 @@ body{
     font-family: "FuentePrincipal";
     letter-spacing: 2px;
     background-image: url("../assets/img/fondo-estrellado.webp"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ========== Header ========== */
@@ -218,6 +218,7 @@ section{
         transform: translateY(0);
     }
 }
+
 .mi-cara > img{
     object-fit: cover;
 }

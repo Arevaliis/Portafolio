@@ -12,6 +12,13 @@ Proyecto personal para mostrar quién soy, mis habilidades y algunos de los proy
 - **Versión:** 2.0  
 **Estado:** ✅ Completado
 
+
+❗ Fondo fijo no funciona correctamente en iOS
+Actualmente estamos investigando un problema en dispositivos iOS relacionado con el uso de la propiedad CSS.
+
+```css
+background-attachment: fixed;
+```
 ---
 
 ## 🛠️ Tecnologías Utilizadas
